@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-image:url(./hotel-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: contain;
+        }
+
+        .header{
+           
+            height:40px;
+            display:flex;
+            flex-direction:row;
+        }
+        .left-header{
+             flex:1;
+             justify-content: center;
+             align-items: start;
+            
+            
+        }
+        .right-header{
+
+            display: flex;
+            flex-direction: row;
+            width:300px;
+            align-items:center;
+        }
+        a{
+            flex:1;
+        }
+        .main{
+            font-family:
+        }
+        h1{
+            margin-left: 40px;
+            font-size:20px;
+            color:white;
+            
+            
+        }
+        #heading1{
+            margin-left: 110px;
+            font-size:80px;
+            color:white;
+            margin-bottom:0px;
+            font-family:sans-serif;
+
+        }
+        p{
+            
+            margin-top:0px;
+            margin-left:120px;
+            font-weight: 700;
+            color:white;
+        }
+        .article{
+            margin-top: 80px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          
+        }
+        .play-button{
+           height:60px;
+           width:60px;
+           margin-top:50px;
+           margin-left:400px;
+           border-radius:150px;
+           border:none;
+           background-color: white;
+           cursor:pointer;
+        }
+        .icon{
+            width:50px;
+            height: 25px;
+            background-color: transparent;
+        }
+        
+           
+
+        
+        .footer{
+            margin-top:130px;
+            display:flex;
+            flex-direction: row;
+            height:120px;
+            
+        }
+        .footer-left{
+            display:flex;
+            flex-direction: row;
+            flex:2;
+            background-color: rgb(227, 154, 8);
+            justify-content: flex-end;
+        }
+        .footer-left div{
+            width:180px;
+            height:80px;
+            margin-top:10px;
+            margin-right:10px;
+            background-color: rgb(194, 194, 194);
+            font-size:18px;
+            padding-left:10px;
+            padding-top:20px;
+        }
+        .footer-right{
+           display: flex;
+           flex:1;
+           flex-direction: row;
+            margin-left:10px;
+
+        }
+       
+    
+        .footer-right div{
+            width:150px;
+            background-color: black;
+            color:white;
+            padding-top:35px;
+            padding-left:20px;
+            font-weight: 550;
+        }
+       
+        input{
+            background-color: transparent;
+            border:1px solid black;
+        }
+        select{
+            background-color: transparent;
+            border:1px solid black;
+        }
+        
+        
+    </style>
+</head>
+  <body>
+    <div class="header">
+        <div class="left-header">
+          <h1 class="main">Roxendrea</h1>
+        </div>
+        <div class="right-header">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#"> Contact</a>
+        </div>
+
+    </div>
+ <div class="article">
+    <div style="flex:1;">
+        <div>
+        <h1 id="heading1">Roxendrea</h1>
+        </div>
+        <div>
+        <p>more than hotel..an experience</p>
+        </div>
+    </div>
+    <div  style="flex:1;">
+            <div class="button-div">
+                <button class="play-button">
+                    <ion-icon name="play-outline" class="icon"></ion-icon>
+                </button>
+            </div>
+    </div>
+ </div>
+
+ <div class="footer">
+
+    <div class="footer-left">
+         <div class="checkin">
+             Check-In Date
+             <input type="date">
+         </div>
+         <div>
+            Check-Out Date
+            <input type="date">
+         </div>
+         <div>
+               Room
+              <form>
+                <select>
+                <option>Suite</option>
+                <option>delux</option>
+                <option>normal</option>
+               </select>
+            </form> 
+         </div>
+         <div>
+            Guests
+            <form>
+                <select>
+                <option>Adult</option>
+                <option>children</option>
+                </select>
+            </form>
+         </div>
+
+
+    </div>
+
+    <div class="footer-right">
+        <div class="check-aval">
+         Check Avaliability
+         Best price gurantee
+        </div>
+    </div>
+
+
+ </div>
+
+
+
+
+
+
+
+
+
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    
+</body>
+</html>
